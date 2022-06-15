@@ -1,9 +1,16 @@
+// native imports
+import React, { useState } from "react";
+
+// components imports
+import Home from "./container/Home";
+
+// style import
 import "./assets/styles/base.styles.scss";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">This is the working page</header>
+			<Home />
 		</div>
 	);
 }
