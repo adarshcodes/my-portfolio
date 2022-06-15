@@ -1,5 +1,5 @@
 // native imports
-import React, { useState } from "react";
+import React from "react";
 
 // components imports
 import Home from "./container/Home";
