@@ -1,7 +1,14 @@
 import React from "react";
+import Sidebar from "../sidebar/Sidebar";
+
+import "./navigation.scss";
 
 function Navigation() {
-	return <div>Navigation</div>;
+	return (
+		<div className="navigation">
+			<Sidebar />
+		</div>
+	);
 }
 
 export default Navigation;
