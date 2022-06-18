@@ -23,6 +23,7 @@
 
 		margin-top: 9.8rem;
 		position: relative;
+		transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 		z-index: 11;
 
@@ -48,6 +49,23 @@
 			&:after {
 				transform: translate(5px, -50%) scale(0.7) rotate(0deg);
 			}
+		}
+	}
+}
+
+.ham-line {
+	transform: translate(10rem) rotate(90deg);
+	transition-delay: 0.2s;
+
+	span {
+		&::before {
+			background-color: white !important;
+			transform: translate(-50%, -50%) rotate(315deg) !important;
+		}
+
+		&::after {
+			background-color: white !important;
+			transform: translate(-50%, -50%) rotate(45deg) !important;
 		}
 	}
 }

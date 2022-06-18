@@ -35,6 +35,8 @@
 		justify-content: center;
 		align-items: center;
 		padding: 5rem;
+
+		transform: translateX(-100%);
 	}
 
 	.navigation-links {
@@ -87,4 +89,8 @@
 			}
 		}
 	}
+}
+
+.show-modal {
+	transform: translateX(0) !important;
 }

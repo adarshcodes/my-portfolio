@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sidebar.scss";
 
 function Sidebar() {
+	const [modal, setModal] = useState(true);
+
+	console.log(modal);
 	return (
 		<div className="sidebar">
-			<button className="ham-btn">
+			<button
+				className={`ham-btn ${modal ? "ham-line" : null}`}
+				onClick={() => setModal(!modal)}
+			>
 				<span></span>
 			</button>
 
-			<div className="menu-holder">
+			<div className={`menu-holder ${modal ? "show-modal" : null}`}>
 				<div className="menu-inside">
-					<div class="navigation-links">
+					<div className="navigation-links">
 						<a href="none" data-text="HOME" id="home-link">
 							HOME
 						</a>
