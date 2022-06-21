@@ -16,7 +16,7 @@ function Sidebar() {
 
 			<div className={`menu-holder ${modal ? "show-modal" : null}`}>
 				<div className="menu-inside">
-					<div className="navigation-links">
+					<div className={`navigation-links ${modal ? "list-load" : null}`}>
 						<a href="none" data-text="HOME" id="home-link">
 							HOME
 						</a>
