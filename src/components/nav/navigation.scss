@@ -30,38 +30,31 @@
 
 		will-change: transform;
 		transition: transform 1s cubic-bezier(1, 0, 0, 1);
-
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
-		// padding: 5rem;
-
 		transform: translateX(-100%);
 	}
 
 	.menu-inside {
+		transform: translate(12%, 13%);
+		display: flex;
 		overflow: hidden;
-		transform: translate(14%, 22%);
+		padding: 2rem 0;
 	}
 
 	.navigation-links {
-		user-select: none;
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
 		flex-direction: column;
 		font-family: poppins;
-		position: relative !important;
 
 		a {
 			padding: 10px;
 			text-decoration: none;
-			color: #fff;
-
+			color: white;
 			font-weight: 500;
-			line-height: 1.1em;
-			font-size: clamp(3.2rem, 4vw, 5.2rem);
+			font-size: clamp(3.2rem, 2.5vw, 5.2rem);
 			opacity: 0.7;
+			transition: all 0.4s ease;
 
 			transform: translate(-100%);
 			transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -70,15 +63,15 @@
 				content: "";
 				position: absolute;
 				top: 50%;
-				left: 50%;
+				left: 100%;
+				transform: translate(-28%, -50%);
 				display: flex;
 				justify-content: center;
-				transform: translate(-50%, -50%);
 				align-items: center;
 				font-size: 3em;
 				font-weight: 400;
 				font-family: monoton;
-				color: rgba(#ced6d8, 0.2);
+				color: rgb(#ced6d8, 0.2);
 				z-index: 1;
 				pointer-events: none;
 				opacity: 0;
@@ -89,12 +82,15 @@
 			&:hover {
 				opacity: 1;
 				font-weight: 600;
+				color: #b56464;
+				letter-spacing: 1.5rem;
 			}
 
 			&:hover::before {
 				content: attr(data-text);
 				opacity: 1;
 				letter-spacing: 10px;
+				color: rgba(#b56464, 0.15);
 			}
 		}
 	}

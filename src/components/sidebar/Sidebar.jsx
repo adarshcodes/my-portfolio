@@ -23,11 +23,14 @@ function Sidebar() {
 						<a href="none" data-text="ABOUT" id="about-link">
 							ABOUT
 						</a>
-						<a href="none" data-text="BLOG" id="blog-link">
-							BLOG
+						<a href="none" data-text="SERVICES" id="services-link">
+							SERVICES
 						</a>
 						<a href="none" data-text="PORTFOLIO" id="portfolio-link">
 							PORTFOLIO
+						</a>
+						<a href="none" data-text="BLOG" id="blog-link">
+							BLOG
 						</a>
 						<a href="none" data-text="CONTACT" id="contact-link">
 							CONTACT
