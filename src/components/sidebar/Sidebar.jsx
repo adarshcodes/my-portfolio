@@ -17,22 +17,22 @@ function Sidebar() {
 			<div className={`menu-holder ${modal ? "show-modal" : null}`}>
 				<div className="menu-inside">
 					<div className={`navigation-links ${modal ? "list-load" : null}`}>
-						<a href="none" data-text="HOME" id="home-link">
+						<a href="#none" data-text="HOME" id="home-link">
 							HOME
 						</a>
-						<a href="none" data-text="ABOUT" id="about-link">
+						<a href="#none" data-text="ABOUT" id="about-link">
 							ABOUT
 						</a>
-						<a href="none" data-text="SERVICES" id="services-link">
+						<a href="#none" data-text="SERVICES" id="services-link">
 							SERVICES
 						</a>
-						<a href="none" data-text="PORTFOLIO" id="portfolio-link">
+						<a href="#none" data-text="PORTFOLIO" id="portfolio-link">
 							PORTFOLIO
 						</a>
-						<a href="none" data-text="BLOG" id="blog-link">
+						<a href="#none" data-text="BLOG" id="blog-link">
 							BLOG
 						</a>
-						<a href="none" data-text="CONTACT" id="contact-link">
+						<a href="#none" data-text="CONTACT" id="contact-link">
 							CONTACT
 						</a>
 					</div>
