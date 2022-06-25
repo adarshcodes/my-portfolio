@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sidebar.scss";
 
 function Sidebar() {
-	const [modal, setModal] = useState(true);
+	const [modal, setModal] = useState(false);
 
 	console.log(modal);
 	return (
