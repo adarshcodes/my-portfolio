@@ -58,7 +58,8 @@
 			transition: all 0.4s ease;
 
 			transform: translate(-100%);
-			transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+				letter-spacing 0.3s;
 
 			&::before {
 				content: "";
@@ -109,8 +110,8 @@
 	}
 
 	@for $i from 0 through 5 {
-		a:nth-child(#{$i + 1}n) {
-			transition-delay: #{$i/10 + 0.8}s;
+		a:nth-child(#{calc($i + 1)}n) {
+			transition-delay: #{calc($i/10 + 0.8)}s;
 		}
 	}
 }
