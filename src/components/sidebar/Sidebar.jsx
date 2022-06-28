@@ -11,8 +11,11 @@ function Sidebar() {
 				className={`ham-btn ${modal ? "ham-line" : null}`}
 				onClick={() => setModal(!modal)}
 			>
+				{" "}
 				<span></span>
 			</button>
+
+			<div className="menu-text">menu</div>
 
 			<div className={`menu-holder ${modal ? "show-modal" : null}`}>
 				<div className="menu-inside">

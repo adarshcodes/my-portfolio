@@ -9,11 +9,11 @@ function Home() {
 	return (
 		<div className="main-container" id="main-container">
 			<Navigation />
-			<h1 className="heading-primary name-heading">
+			{/* <h1 className="heading-primary name-heading">
 				Adarsh <br />
 				Pratap <br />
 				Singh
-			</h1>
+			</h1> */}
 			<ContactButton />
 		</div>
 	);
