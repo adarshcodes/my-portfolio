@@ -23,7 +23,7 @@
 		backdrop-filter: blur(33px);
 		background-blend-mode: overlay;
 
-		width: 100vw;
+		width: 80vw;
 		height: 100vh;
 
 		z-index: 10;
@@ -35,7 +35,7 @@
 	}
 
 	.menu-inside {
-		transform: translate(12%, 13%);
+		transform: translate(9vw, 9vh);
 		display: flex;
 		overflow: hidden;
 		padding: 2rem 0;
@@ -54,9 +54,8 @@
 			text-decoration: none;
 			color: white;
 			font-weight: 500;
-			font-size: clamp(3.2rem, 2.5vw, 5.2rem);
+			font-size: clamp(3rem, 1.5vw, 5.2rem);
 			opacity: 0.7;
-			transition: all 0.4s ease;
 
 			transform: translate(-100%);
 			transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
