@@ -1,5 +1,6 @@
 import React from "react";
 import ContactButton from "../components/contactButton/ContactButton";
+import Header from "../components/header/Header";
 
 import Navigation from "../components/nav/Navigation";
 
@@ -9,6 +10,7 @@ function Home() {
 	return (
 		<div className="main-container" id="main-container">
 			<Navigation />
+			<Header />
 			{/* <h1 className="heading-primary name-heading">
 				Adarsh <br />
 				Pratap <br />
