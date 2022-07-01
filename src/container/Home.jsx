@@ -3,6 +3,7 @@ import ContactButton from "../components/contactButton/ContactButton";
 import Header from "../components/header/Header";
 
 import Navigation from "../components/nav/Navigation";
+import Socialicons from "../components/socialicons/Socialicons";
 
 import "./home.styles.scss";
 
@@ -16,6 +17,7 @@ function Home() {
 				Pratap <br />
 				Singh
 			</h1> */}
+			<Socialicons />
 			<ContactButton />
 		</div>
 	);

@@ -1,0 +1,21 @@
+.socialicons {
+	position: fixed;
+	right: 0;
+	top: 0;
+
+	width: 4rem;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.social-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #1c1b20;
+		font-size: 1.5rem;
+	}
+}
