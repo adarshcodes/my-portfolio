@@ -10,6 +10,7 @@
 
 	&__logo {
 		z-index: 1000;
+		color: #191817;
 
 		text-transform: uppercase;
 		letter-spacing: 0.3rem;
@@ -19,10 +20,12 @@
 			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 		font-weight: 800;
 
+		transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
 		cursor: pointer;
 
 		i {
-			font-size: 1.25rem;
+			font-size: 0.5rem;
 			margin-left: -0.5rem;
 		}
 	}
@@ -41,7 +44,7 @@
 			margin-left: 0.5rem;
 
 			.active-lang {
-				color: #1c1b20;
+				color: #191817;
 			}
 		}
 	}

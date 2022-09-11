@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./sidebar.scss";
 
-function Sidebar() {
-	const [modal, setModal] = useState(false);
-
-	console.log(modal);
+function Sidebar({ modal, setModal }) {
 	return (
 		<div className="sidebar">
 			<button

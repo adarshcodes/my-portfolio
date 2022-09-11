@@ -3,10 +3,10 @@ import Sidebar from "../sidebar/Sidebar";
 
 import "./navigation.scss";
 
-function Navigation() {
+function Navigation({ modal, setModal }) {
 	return (
 		<div className="navigation">
-			<Sidebar />
+			<Sidebar modal={modal} setModal={setModal} />
 		</div>
 	);
 }
