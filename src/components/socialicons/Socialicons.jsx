@@ -36,6 +36,36 @@ function Socialicons() {
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</li>
+				<li>
+					<a
+						href="https://www.youtube.com/channel/UCTtem0QNEAeh4Nm4tg3rMHg"
+						className="social-links"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/adarshofficial/"
+						className="social-links"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://medium.com/@officiallyAdarsh"
+						className="social-links"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<i class="fa-brands fa-medium"></i>
+					</a>
+				</li>
 			</ul>
 		</div>
 	);

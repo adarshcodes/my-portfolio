@@ -2,7 +2,7 @@
 	background-color: #191817;
 
 	position: absolute;
-	right: 6vw;
+	right: 5vw;
 	bottom: 10vh;
 
 	border: solid 0.1rem #191817;
@@ -18,10 +18,18 @@
 	z-index: 1;
 	font-weight: 600;
 	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+	backdrop-filter: blur(33px);
+	background-blend-mode: overlay;
+
 
 	&:hover {
 		background-color: white;
 		color: #191817;
+	}
+
+	&:active {
+		border-radius: 2rem 0;
 	}
 
 	span {

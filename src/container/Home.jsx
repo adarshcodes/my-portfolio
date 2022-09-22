@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ContactButton from "../components/contactButton/ContactButton";
 import Header from "../components/header/Header";
 
 import Navigation from "../components/nav/Navigation";
 import Socialicons from "../components/socialicons/Socialicons";
+import MainVisual from "../components/main-visual/MainVisual";
 
 import "./home.styles.scss";
 
@@ -14,13 +14,8 @@ function Home() {
 		<div className="main-container" id="main-container">
 			<Navigation modal={modal} setModal={setModal} />
 			<Header modal={modal} />
-			{/* <h1 className="heading-primary name-heading">
-				Adarsh <br />
-				Pratap <br />
-				Singh
-			</h1> */}
 			<Socialicons />
-			<ContactButton />
+			<MainVisual />
 		</div>
 	);
 }

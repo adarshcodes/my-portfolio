@@ -17,5 +17,16 @@
 		align-items: center;
 		color: #1c1b20;
 		font-size: 1.8rem;
+		gap: 2rem;
+
+		li {
+			transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			cursor: pointer;
+
+			&:hover {
+				transform: translateX(-1.3vw) scale(1.5);
+				padding: 0rem 1rem;
+			}
+		}
 	}
 }

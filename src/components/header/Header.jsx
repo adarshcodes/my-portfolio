@@ -4,21 +4,16 @@ import "./header.scss";
 function Header({ modal }) {
 	return (
 		<div className="header">
-			<span
+			<div
 				className={`header__logo ${
 					modal ? "header__logo-active" : "header__logo"
 				}`}
 			>
-				Adarsh
-				{/* <i
-					className={`fa-light fa-lightbulb-on ${
-						modal
-							? "fa-light fa-lightbulb-on rotate-bulb"
-							: "fa-light fa-lightbulb-on"
-					}`}
-				></i> */}
+				Adar
 				<i class="fa-solid fa-circle"></i>
-			</span>
+				sh
+				<span className="header__outlet">Portfolio</span>
+			</div>
 
 			<ul className="header__lang">
 				<li>
