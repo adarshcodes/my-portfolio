@@ -32,6 +32,11 @@
 		will-change: transform;
 		transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
 		transform: translateX(-100%);
+
+		background-image: url("../../assets/images/back.svg");
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: 20rem;
 	}
 
 	.menu-inside {

@@ -9,10 +9,10 @@ function Header({ modal }) {
 					modal ? "header__logo-active" : "header__logo"
 				}`}
 			>
-				Adar
-				<i class="fa-solid fa-circle"></i>
-				sh
-				<span className="header__outlet">Portfolio</span>
+				Adarsh<i class="fa-solid fa-circle"></i>
+				<span className="header__outlet">
+					Portfolio<i class="fa-light fa-seedling"></i>
+				</span>
 			</div>
 
 			<ul className="header__lang">
