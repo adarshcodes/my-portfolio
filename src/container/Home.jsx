@@ -7,15 +7,19 @@ import MainVisual from "../components/main-visual/MainVisual";
 
 import "./home.styles.scss";
 
-function Home() {
+function Home({ langSwitch, setLangSwitch }) {
 	const [modal, setModal] = useState(false);
 
 	return (
 		<div className="main-container" id="main-container">
 			<Navigation modal={modal} setModal={setModal} />
-			<Header modal={modal} />
+			<Header
+				modal={modal}
+				langSwitch={langSwitch}
+				setLangSwitch={setLangSwitch}
+			/>
 			<Socialicons />
-			<MainVisual />
+			<MainVisual langSwitch={langSwitch} setLangSwitch={setLangSwitch} />
 		</div>
 	);
 }

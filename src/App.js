@@ -8,9 +8,11 @@ import Home from "./container/Home";
 import "./assets/styles/base.styles.scss";
 
 function App() {
+	const [langSwitch, setLangSwitch] = React.useState(false);
+
 	return (
 		<div className="App">
-			<Home />
+			<Home langSwitch={langSwitch} setLangSwitch={setLangSwitch} />
 		</div>
 	);
 }
