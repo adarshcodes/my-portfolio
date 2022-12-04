@@ -59,11 +59,16 @@
 		color: #bcbcbc;
 
 		li {
-			margin-left: 0.5rem;
-
-			.active-lang {
-				color: #191817;
-			}
+			cursor: pointer;
 		}
 	}
+}
+
+.lang {
+	margin-left: 0.5rem;
+	transition: all 0.5s cubic-bezier(0.5, -0.5, 0.2, 1.6);
+}
+
+.active-lang {
+	color: #191817;
 }

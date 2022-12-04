@@ -1,7 +1,10 @@
+import { logDOM } from "@testing-library/react";
 import React from "react";
 import "./header.scss";
 
-function Header({ modal }) {
+function Header({ modal, langSwitch, setLangSwitch }) {
+	const [activeLang, setActiveLang] = React.useState(false);
+
 	return (
 		<div className="header">
 			<div
@@ -16,15 +19,21 @@ function Header({ modal }) {
 			</div>
 
 			<ul className="header__lang">
-				<li>
-					<a href="/" className="lang active-lang">
-						En.
-					</a>
+				<li
+					onClick={() => {
+						setLangSwitch(false);
+						setActiveLang(false);
+					}}
+				>
+					<p className={`lang ${!activeLang ? "active-lang" : null}`}>En.</p>
 				</li>
-				<li>
-					<a href="/" className="lang ">
-						Hi.
-					</a>
+				<li
+					onClick={() => {
+						setLangSwitch(true);
+						setActiveLang(true);
+					}}
+				>
+					<p className={`lang ${activeLang ? "active-lang" : null}`}>Hi.</p>
 				</li>
 			</ul>
 		</div>
