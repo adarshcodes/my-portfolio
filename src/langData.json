@@ -1,0 +1,17 @@
+{
+  "header": {
+    "name": {
+      "english": "Adarsh",
+      "hindi": "आदर्श"
+    },
+    "portfolio": {
+      "english": "Portfolio",
+      "hindi": "पोर्टफोलियो"
+    }
+  }
+  ,
+	"contactButton": {
+		"english": "Say Hi!",
+		"hindi": "नमस्ते कहे!"
+	}
+}

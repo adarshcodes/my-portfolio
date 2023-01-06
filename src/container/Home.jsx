@@ -7,7 +7,7 @@ import MainVisual from "../components/main-visual/MainVisual";
 
 import "./home.styles.scss";
 
-function Home({ langSwitch, setLangSwitch }) {
+function Home({ langSwitch, setLangSwitch, langData }) {
 	const [modal, setModal] = useState(false);
 
 	return (
@@ -15,11 +15,16 @@ function Home({ langSwitch, setLangSwitch }) {
 			<Navigation modal={modal} setModal={setModal} />
 			<Header
 				modal={modal}
+				langData={langData}
 				langSwitch={langSwitch}
 				setLangSwitch={setLangSwitch}
 			/>
 			<Socialicons />
-			<MainVisual langSwitch={langSwitch} setLangSwitch={setLangSwitch} />
+			<MainVisual
+				langData={langData}
+				langSwitch={langSwitch}
+				setLangSwitch={setLangSwitch}
+			/>
 		</div>
 	);
 }

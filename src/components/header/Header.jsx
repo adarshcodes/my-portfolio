@@ -2,7 +2,7 @@ import { logDOM } from "@testing-library/react";
 import React from "react";
 import "./header.scss";
 
-function Header({ modal, langSwitch, setLangSwitch }) {
+function Header({ modal, langSwitch, setLangSwitch, langData }) {
 	const [activeLang, setActiveLang] = React.useState(false);
 
 	return (
@@ -12,9 +12,13 @@ function Header({ modal, langSwitch, setLangSwitch }) {
 					modal ? "header__logo-active" : "header__logo"
 				}`}
 			>
-				Adarsh<i class="fa-solid fa-circle"></i>
+				{langSwitch ? langData.header.name.hindi : langData.header.name.english}
+				<i class="fa-solid fa-circle"></i>
 				<span className="header__outlet">
-					Portfolio<i class="fa-light fa-seedling"></i>
+					{langSwitch
+						? langData.header.portfolio.hindi
+						: langData.header.portfolio.english}
+					<i class="fa-light fa-seedling"></i>
 				</span>
 			</div>
 

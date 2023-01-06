@@ -1,18 +1,16 @@
 import React from "react";
 import { Plus } from "react-feather";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import "./contact.styles.scss";
 
-function ContactButton({ langSwitch, setLangSwitch }) {
-	const [lang, setLang] = React.useState({
-		hin: "नमस्ते कहे!",
-		eng: "Say Hi!",
-	});
-
+function ContactButton({ langSwitch, setLangSwitch, langData }) {
 	return (
 		<button className="contact-button">
-			<span>{langSwitch ? lang.hin : lang.eng}</span>
+			{langSwitch ? (
+				<span>{langData.contactButton.hindi}</span>
+			) : (
+				<span>{langData.contactButton.english}</span>
+			)}
 			<Plus />
 		</button>
 	);
